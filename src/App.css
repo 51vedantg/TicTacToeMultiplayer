@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Happy Monkey", system-ui; 
+  }
+
+  .mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    flex-direction: column;
+   
+  }
+
+  .waiting {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 300px;
+    
+    
+  }
+
+  .water-background {
+    background-color:rgb(30,30,30);
+  }
+
+  .game-heading {
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .square-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+
+  }
+
+  .move-detection
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+
+  .left,.right
+  {
+    height: 30px;
+    width: 120px;
+    background-color:rgb(30,30,30);
+    border-bottom-left-radius:50px ;
+    border-top-right-radius:50px ;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 5px;
+    
+    
+
+  }
+
+  .finishedState {
+    font-size: 30px;
+   
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .startButton {
+    height: 100px;
+    width:300px;
+    background-color: #eaca56;
+    color: black;
+    font-size: 33px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor:pointer;
+    margin-top: 20%;
+    margin-left: 40%;
+    border: none;
+  
+  
+  }
+  .current-move-circle {
+    background-color :#DD7F9f !important;
+  }
+  .current-move-cross {
+    background-color :#3FA7F0  !important;
+  }
+
+  .opponentState {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .title {
+    font-family: sans-serif;
+  }
+
+  .my-custom-font {
+    font-family: 'Arial', sans-serif; /* Change this to your desired font family */
+    font-size: 16px; 
+    /* Change this to your desired font size */
+    color: black;
+  }
+
+  .showSign {
+      color:white;
+      background-color :rgb(20,20,20);
+      font-family: sans-serif;
+      width: 250px;
+      height: 150px;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      border-radius: 7px;
+      padding: 10px;
+      
+      margin-top: 250px;
+      margin-left: 600px;
+      padding-bottom: 15px;
+  }
+  .isButton {
+    height: 40px;
+    width: 150px;
+    background-color:orange;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 20px;    
+  }
+
+  .waiting1{
+  display: flex;
+ 
+  justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    border-top-color: black;
+    animation:spin 0.5s linear infinite ;
+
+  }
+  @keyframes spin{
+    0%{
+         transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
